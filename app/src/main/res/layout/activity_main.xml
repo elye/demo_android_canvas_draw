@@ -32,6 +32,12 @@
                 style="@style/DefaultStyle"/>
         <com.elyeproj.canvasexperiment.DrawArcView
                 style="@style/DefaultStyle"/>
+        <com.elyeproj.canvasexperiment.DrawTextView
+                style="@style/DefaultStyle"/>
+        <com.elyeproj.canvasexperiment.DrawTextPathView
+                style="@style/DefaultStyle"/>
+        <com.elyeproj.canvasexperiment.DrawTextRunView
+                style="@style/DefaultStyle"/>
 
     </LinearLayout>
 </ScrollView>

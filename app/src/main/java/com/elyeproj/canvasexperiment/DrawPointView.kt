@@ -16,6 +16,6 @@ class DrawPointView @JvmOverloads constructor(
     override fun onDraw(canvas: Canvas) {
         super.onDraw(canvas)
         if (width == 0 || height == 0) return
-        canvas.drawPoint(width/2f, height/2f, projectResources.paint)
+        canvas.drawPoint(width/2f, height/2f, projectResources.paintBig)
     }
 }
