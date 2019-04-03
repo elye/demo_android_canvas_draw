@@ -38,6 +38,12 @@
                 style="@style/DefaultStyle"/>
         <com.elyeproj.canvasexperiment.DrawTextRunView
                 style="@style/DefaultStyle"/>
+        <com.elyeproj.canvasexperiment.DrawBitmapView
+                style="@style/DefaultStyle"/>
+        <com.elyeproj.canvasexperiment.DrawRGBView
+                style="@style/DefaultStyle"/>
+        <com.elyeproj.canvasexperiment.DrawARGBView
+                style="@style/DefaultStyle"/>
 
     </LinearLayout>
 </ScrollView>
