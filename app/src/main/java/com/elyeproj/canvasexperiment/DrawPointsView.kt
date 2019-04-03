@@ -19,9 +19,7 @@ class DrawPointsView @JvmOverloads constructor(
         canvas.drawPoints(
             listOf(
                 0f + paddingStart, 0f + paddingTop,
-                (width / 2f), (height - paddingBottom).toFloat(),
-                width / 2f, (height - paddingBottom).toFloat(),
-                (width - paddingEnd).toFloat(), (0f + paddingStart)
+                (width - paddingEnd).toFloat(), (height - paddingBottom).toFloat()
             ).toFloatArray(),
             projectResources.paintBig
         )

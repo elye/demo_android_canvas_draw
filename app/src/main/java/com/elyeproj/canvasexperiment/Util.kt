@@ -22,33 +22,34 @@ lateinit var projectResources: ProjectResources
 
 class ProjectResources(private val resources: Resources) {
     val paintBig by lazy {
-        Paint().apply {
+        getBasePaint().apply {
             color = Color.BLACK
-            style = Paint.Style.STROKE
-            isAntiAlias = true
             strokeWidth = resources.dpToPx(8)
-            textAlign = Paint.Align.CENTER
-            textSize = resources.dpToPx(30)
         }
     }
 
     val paint by lazy {
-        Paint().apply {
+        getBasePaint().apply {
             color = Color.BLACK
-            style = Paint.Style.STROKE
-            isAntiAlias = true
             strokeWidth = resources.dpToPx(2)
-            textAlign = Paint.Align.CENTER
             textSize = resources.dpToPx(30)
         }
     }
 
     val paintLight by lazy {
-        Paint().apply {
+        getBasePaint().apply {
             color = Color.LTGRAY
-            style = Paint.Style.STROKE
-            isAntiAlias = true
             strokeWidth = resources.dpToPx(2)
+            textSize = resources.dpToPx(30)
+        }
+    }
+
+    private fun getBasePaint(): Paint {
+        return Paint().apply {
+            style = Paint.Style.STROKE
+            strokeCap = Paint.Cap.ROUND
+            strokeJoin = Paint.Join.ROUND
+            isAntiAlias = true
             textAlign = Paint.Align.CENTER
             textSize = resources.dpToPx(30)
         }
