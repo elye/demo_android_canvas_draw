@@ -39,6 +39,7 @@ class ProjectResources(private val resources: Resources) {
     val paintLight by lazy {
         getBasePaint().apply {
             color = Color.LTGRAY
+            alpha = 128
             strokeWidth = resources.dpToPx(2)
             textSize = resources.dpToPx(30)
         }

@@ -44,6 +44,8 @@
                 style="@style/DefaultStyle"/>
         <com.elyeproj.canvasexperiment.DrawARGBView
                 style="@style/DefaultStyle"/>
+        <com.elyeproj.canvasexperiment.DrawBitmapMeshView
+                style="@style/DefaultStyle"/>
 
     </LinearLayout>
 </ScrollView>
