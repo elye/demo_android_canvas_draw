@@ -34,7 +34,7 @@
                 style="@style/DefaultStyle"/>
         <com.elyeproj.canvasexperiment.DrawTextView
                 style="@style/DefaultStyle"/>
-        <com.elyeproj.canvasexperiment.DrawTextPathView
+        <com.elyeproj.canvasexperiment.DrawTextOnPathView
                 style="@style/DefaultStyle"/>
         <com.elyeproj.canvasexperiment.DrawTextRunView
                 style="@style/DefaultStyle"/>
