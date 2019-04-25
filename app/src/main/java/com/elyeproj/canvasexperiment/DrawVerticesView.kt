@@ -34,7 +34,6 @@ class DrawVerticesView @JvmOverloads constructor(
             verts.size, verts, 0,
             null, 0,
             verticesColors, 0,
-            //null, 0,
             indices, 0, indices.size,
             projectResources.paint
         )
