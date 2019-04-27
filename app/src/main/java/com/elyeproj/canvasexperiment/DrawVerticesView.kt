@@ -16,6 +16,14 @@ class DrawVerticesView @JvmOverloads constructor(
         const val DUMMYCOLOR =  -0x100000
     }
 
+    val paint = Paint().apply {
+        val bitmap = BitmapFactory.decodeResource(
+            resources, R.drawable.image)
+        val shader = BitmapShader(
+            bitmap, Shader.TileMode.CLAMP, Shader.TileMode.CLAMP)
+        this.shader = shader
+    }
+
     override fun onDraw(canvas: Canvas) {
         super.onDraw(canvas)
         if (width == 0 || height == 0) return
@@ -32,10 +40,10 @@ class DrawVerticesView @JvmOverloads constructor(
         canvas.drawVertices(
             Canvas.VertexMode.TRIANGLES,
             verts.size, verts, 0,
-            null, 0,
+            verts,0,
             verticesColors, 0,
             indices, 0, indices.size,
-            projectResources.paint
+            paint
         )
     }
 }
