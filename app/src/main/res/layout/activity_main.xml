@@ -48,6 +48,8 @@
                 style="@style/DefaultStyle"/>
         <com.elyeproj.canvasexperiment.DrawARGBView
                 style="@style/DefaultStyle"/>
+        <com.elyeproj.canvasexperiment.DrawPaintView
+                style="@style/DefaultStyle"/>
         <com.elyeproj.canvasexperiment.DrawBitmapMeshView
                 style="@style/DefaultStyle"/>
         <com.elyeproj.canvasexperiment.DrawVerticesView
