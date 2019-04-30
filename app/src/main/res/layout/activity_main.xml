@@ -54,6 +54,8 @@
                 style="@style/DefaultStyle"/>
         <com.elyeproj.canvasexperiment.DrawVerticesView
                 style="@style/DefaultStyle"/>
+        <com.elyeproj.canvasexperiment.DrawPictureView
+                style="@style/DefaultStyle"/>
 
     </LinearLayout>
 </ScrollView>
