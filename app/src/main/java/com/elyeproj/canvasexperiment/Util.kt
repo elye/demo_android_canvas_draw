@@ -3,6 +3,7 @@ package com.elyeproj.canvasexperiment
 import android.content.res.Resources
 import android.graphics.Color
 import android.graphics.Paint
+import android.text.TextPaint
 import android.util.TypedValue
 
 inline fun <reified T> Resources.dpToPx(value: Int): T {
@@ -25,6 +26,13 @@ class ProjectResources(private val resources: Resources) {
         getBasePaint().apply {
             color = Color.BLACK
             strokeWidth = resources.dpToPx(8)
+        }
+    }
+
+    val textPaint by lazy {
+        TextPaint(paint).apply {
+            textSize = resources.dpToPx(15)
+            strokeWidth = resources.dpToPx(1)
         }
     }
 
